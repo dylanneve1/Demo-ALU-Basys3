@@ -37,7 +37,7 @@ module ALU(input [5:0] A, B, input [2:0] fxn, output [5:0] X, output [1:0] OVF);
     // Check if B > A and store result in op4
     _greaterthan fxn_op4(.a(B), .b(A), .lt_flag(op4));
     // Perform NXOR on A and B and store result in op5
-    _bitwise_nxor fxn_op5(.a(B), .b(A), .out(op5));
+    _6bit_xnor fxn_op5(.a(B), .b(A), .out(op5));
     // Store result of A + B into op6
     _6bit_ripple_adder fxn_op6(.x(A), .y(B), .sel(1'b0), .sum(op6), .overflow(ovf6[0]), .c_out(ovf6[1]));
     // Store result of A - B into op7
