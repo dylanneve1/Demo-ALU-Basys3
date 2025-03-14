@@ -52,12 +52,4 @@ set_property PACKAGE_PIN W18 [get_ports {X[4]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {X[4]}]
 set_property PACKAGE_PIN U15 [get_ports {X[5]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {X[5]}]
-
-# Output Carry Out
-set_property PACKAGE_PIN P1 [get_ports {OVF[1]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {OVF[1]}]
-
-# Output Overflow
-set_property PACKAGE_PIN L1 [get_ports {OVF[0]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {OVF[0]}]
 	
